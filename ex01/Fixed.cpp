@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 22:55:59 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/14 22:56:13 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/05/02 00:49:11 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,31 +20,31 @@ double round(double d)
 
 Fixed::Fixed()
 {
-	std::cout	<< "Default constructor called" << std::endl;
+	std::cout	<< GREEN "Default constructor called" RESET << std::endl;
 	_value = 0;
 }
 
 Fixed::Fixed(const int num)
 {
-	std::cout	<< "Int constructor called" << std::endl;
+	std::cout	<< CYAN "Int constructor called"  RESET << std::endl;
 	_value = num << _fract_bits;
 }
 
 Fixed::Fixed(const float num)
 {
-	std::cout	<< "Float constructor called" << std::endl;
+	std::cout	<< YELLOW "Float constructor called" RESET << std::endl;
 	_value = round(num * (1 << _fract_bits));
 }
 
 Fixed::Fixed(const Fixed &ref)
 {
-	std::cout	<< "Copy constructor called" << std::endl;
+	std::cout	<< MAGENTA "Copy constructor called" RESET << std::endl;
 	*this = ref;
 }
 
 Fixed&	Fixed::operator=(const Fixed& ref)
 {
-	std::cout	<< "Copy assignment operator called" << std::endl;
+	std::cout	<< BLUE "Copy assignment operator called" RESET << std::endl;
 	if (this != &ref)
 		_value = ref.getRawBits();
 	return (*this);
@@ -52,7 +52,7 @@ Fixed&	Fixed::operator=(const Fixed& ref)
 
 Fixed::~Fixed()
 {
-	std::cout	<< "Destructor called" << std::endl;
+	std::cout	<< RED "Destructor called" RESET << std::endl;
 }
 
 int		Fixed::getRawBits(void) const

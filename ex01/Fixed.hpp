@@ -3,18 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 22:55:59 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/14 22:56:08 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/05/02 00:55:01 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_HPP
 #define FIXED_HPP
 
+/*=================================INCLUDES==================================*/
+
 #include <iomanip>
 #include <iostream>
+
+/*==================================COLORS===================================*/
+
+#define RESET "\033[0m"
+#define BLACK "\033[30m"
+#define RED "\033[31m"
+#define GREEN "\033[32m"
+#define YELLOW "\033[33m"
+#define BLUE "\033[34m"
+#define MAGENTA "\033[35m"
+#define CYAN "\033[36m"
+#define WHITE "\033[37m"
+#define BRIGHT_GREEN "\033[38;5;46m"
+
+/*===================================CLASS===================================*/
 
 class Fixed
 {

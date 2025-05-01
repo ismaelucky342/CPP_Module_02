@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 22:56:43 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/14 22:56:43 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/05/02 00:45:24 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 Fixed::Fixed()
 {
-	std::cout	<< "Default constructor called" << std::endl;
+	std::cout	 << MAGENTA "Default constructor called" RESET << std::endl;
 	_value = 0;
 }
 
 Fixed::Fixed(const Fixed &ref)
 {
-	std::cout	<< "Copy constructor called" << std::endl;
+	std::cout	<< GREEN "Copy constructor called" RESET << std::endl;
 	*this = ref;
 }
 
 Fixed&	Fixed::operator=(const Fixed& ref)
 {
-	std::cout	<< "Copy assignment operator called" << std::endl;
+	std::cout  << GREEN "Copy assignment operator called" RESET << std::endl;
 	if (this != &ref)
 	{
 		_value = ref.getRawBits();
@@ -36,12 +36,12 @@ Fixed&	Fixed::operator=(const Fixed& ref)
 
 Fixed::~Fixed()
 {
-	std::cout	<< "Destructor called" << std::endl;
+	std::cout	<< RED "Destructor called" RESET << std::endl;
 }
 
 int		Fixed::getRawBits(void) const
 {
-	std::cout	<< "getRawbits member function called" << std::endl;
+	std::cout	<< CYAN "getRawbits member function called" RESET << std::endl;
 	return (_value);
 }
 

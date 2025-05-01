@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 22:55:59 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/14 22:56:02 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/05/02 00:54:37 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,15 @@ int main( void )
 
 	a = Fixed( 1234.4321f );
 
-	std::cout << "a is " << a << std::endl;
-	std::cout << "b is " << b << std::endl;
-	std::cout << "c is " << c << std::endl;
-	std::cout << "d is " << d << std::endl;
+	std::cout << BRIGHT_GREEN "a is " << a  << RESET << std::endl;
+	std::cout << BRIGHT_GREEN "b is " << b  << RESET << std::endl;
+	std::cout << BRIGHT_GREEN "c is " << c  << RESET << std::endl;
+	std::cout << BRIGHT_GREEN "d is "  << d << RESET << std::endl;
 
-	std::cout << "a is " << a.toInt() << " as integer" << std::endl;
-	std::cout << "b is " << b.toInt() << " as integer" << std::endl;
-	std::cout << "c is " << c.toInt() << " as integer" << std::endl;
-	std::cout << "d is " << d.toInt() << " as integer" << std::endl;
+	std::cout << BRIGHT_GREEN "a is " << a.toInt() << " as integer" RESET << std::endl;
+	std::cout << BRIGHT_GREEN "b is " << b.toInt() << " as integer" RESET << std::endl;
+	std::cout << BRIGHT_GREEN "c is " << c.toInt() << " as integer" RESET << std::endl;
+	std::cout << BRIGHT_GREEN "d is " << d.toInt() << " as integer" RESET << std::endl;
 
 	return 0;
 }

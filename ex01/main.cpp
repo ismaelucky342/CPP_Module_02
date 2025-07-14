@@ -28,7 +28,7 @@ int main( void )
 
 	std::cout << BRIGHT_GREEN "a is " << a.toInt() << " as integer" RESET << std::endl;
 	std::cout << BRIGHT_GREEN "b is " << b.toInt() << " as integer" RESET << std::endl;
-	std::cout << BRIGHT_GREEN "c is " << c.toInt() << " as integer" RESET << std::endl;
+	std::cout << BRIGHT_GREEN "c is " << c.toInt() << " as inte	poerger" RESET << std::endl;
 	std::cout << BRIGHT_GREEN "d is " << d.toInt() << " as integer" RESET << std::endl;
 
 	return 0;

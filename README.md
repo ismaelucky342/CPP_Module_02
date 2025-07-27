@@ -285,19 +285,6 @@ make
 4. **Missing const versions**: Provide both const and non-const variants
 5. **Assignment operator**: Remember to return *this
 
----
-
-**CPP Module 02** establishes crucial foundations for advanced C++ programming, particularly operator overloading and proper class design. These skills are essential for creating intuitive, maintainable C++ code and understanding how built-in types achieve their functionality.
-
----
-*Born2code - 42 School*
-
-### File Structure
-- Fixed.hpp: Class definition and method declarations
-
-- Fixed.cpp: Method implementations
-
-- main.cpp: Test cases to demonstrate class behavior
 
 ## Extras 
 

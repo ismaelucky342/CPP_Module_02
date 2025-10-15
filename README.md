@@ -1,3 +1,5 @@
+<img width="917" height="218" alt="imagen" src="https://github.com/user-attachments/assets/69920d8b-9531-4f03-a01f-e4c736bb86b1" />
+
 # CPP Module 02 - Ad-hoc Polymorphism, Operator Overloading & Orthodox Canonical Class Form
 
 ## Overview
